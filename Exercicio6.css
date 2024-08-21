@@ -1,0 +1,300 @@
+*{ /* pré definiçoes */
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+main{
+    position: relative;
+    margin: auto;
+    width: 90%;
+    height: auto;
+    background-color: rgb(240, 128, 128);
+}
+
+header{
+     position: relative;
+     display: flex;
+     justify-content:end; /* alinhament horizontal para direita */
+     align-items: end; /*alinhamento vertical no fim */
+     width: 100%;
+     height: 150px;
+     color: black;
+     background-image: url(imagens/guitarras_header.jpg);
+     background-size: cover;
+}
+
+nav{  /* estilização do componente de navegação */
+    position: absolute; /* ele não se movimenta */
+    margin-right: 30px;  /* distancia da direita*/
+    justify-content: space-around;
+    margin-bottom: 30px; 
+    padding: 15px; /* alinhamento interno */
+    flex-direction: row;
+    background-color: #fff;
+}
+
+nav a{
+    text-decoration: none; /* tirar linha do texto */
+    margin: 30px;
+    color:rgb(102, 48, 48);
+}
+
+nav a:hover{
+    background-color: chocolate;
+    color: blue;
+    transition:  2s all;
+}
+
+
+#vermelha{
+    position: relative;
+    background-color: rgb(102, 48, 48);
+    margin-top: 10px;
+    width: 100%;
+    height: 400px;
+}
+
+#quadro1{
+    position: relative;
+    background-color: rosybrown;
+    margin: auto;
+    width: 40%;
+    height: 300px;
+   float: left;
+   font-size: 30px;
+   margin-top: 30px;
+   margin-left: 40px;
+}
+
+#quadro2{
+    position: relative;
+    background-color: rosybrown;
+    margin: auto;
+    width: 40%;
+    height: 300px;
+   float: left;
+   margin-top: 30px;
+   margin-left: 150px;
+   background-image: url(imagens/loja.jpg);
+   background-size: cover;
+}
+
+#aqua{
+    position: relative;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+
+#quadrados_brancos{
+    display: flex;    /*componte flexivel */
+    flex-direction: row;
+    justify-content: space-evenly;    /* alinhamento do componente / horizontal */
+    width: 100%;
+    height: 100%;
+    margin: auto; 
+}
+
+
+.card{ /* estilização do card */
+    background-color: #fff;
+    width: 15%;
+    height: 80%;
+    margin: 30px;
+    padding: 15px;  /* borda pra dentro */
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card img{ /*estilização da imagem */
+    width: 80%;
+    height: 60%;
+}
+
+.card p1{  /* estilização do textp dentro do tag p */
+    color: red;
+}
+
+
+#marrom{
+    position: relative;
+    background-color: rgb(231, 134, 22);
+    margin-top: 10px;
+    width: 100%;
+    height: 400px;
+    text-align:initial;
+    
+}
+
+#amarelo{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    width: 100%;
+    height: 400px;
+    text-align:initial;
+    
+}
+
+ .azul{
+    position: relative;
+    background-color: rgb(19, 4, 102);
+    margin: auto;
+    width: 40%;
+    height: 350px;
+   float: left;
+   margin-top: 20px;
+   margin-left: 70px;
+} 
+
+.caixas_redes{
+    background-color: #fff;
+    margin: auto;
+    width: 40%;
+    height: 350px;
+    justify-content: center;
+    text-align: center;
+   float: left;
+   flex-direction: row;
+   padding: 15px;
+}
+
+.caixas_redes p{
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+}
+
+#redes{
+    display: flex;
+    justify-content: center;
+}
+
+.imgrede{
+    margin: 5px;
+    width: 75px;
+    height: 75px;
+}
+
+#quadrados_footers{
+    display: flex;
+    justify-content: space-between; /* espaçamento pro extremo do quadrado */
+    flex-direction: row;
+    width: 100%;
+}
+
+.caixaredes {
+    background-color: #c57273;
+    width: 45%;
+    height: auto; /* Altura automática para se ajustar ao conteúdo */
+    color: #fff;
+    margin: 20px;
+
+}
+
+
+footer{
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 150px;
+}
+
+#maps{
+    position: relative;
+    background-color: rosybrown;
+    margin: auto;
+    width: 45%;
+    height: 300px;
+   float: left;
+   margin-top: 30px;
+   margin-left: 100px;
+   background-size: cover;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#nossa_loja{
+    position: relative;
+    background-color: rosybrown;
+    width: 35%;
+    height: 300px;
+   float: left;
+   margin-top: 30px;
+   font-size: 30px;
+   margin-left: 130px;
+   background-size: cover;
+   float: left;
+}
+
+.texto_end{
+    text-align: center;
+    color: #fff;
+   padding: 15px;
+}
+
+#redes_end{
+    justify-content: center;
+    display: flex;
+}
+
+.img_end{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+/* Visualização Monbile*/
+
+@media (max-width: 720px) {
+    #quadro1, #quadro2 {
+        width: 70%;
+        margin-left: 10%;
+        margin-top: 10px;
+        float: none;
+    }
+
+    #quadrados_brancos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 60%;
+        height: auto;
+    }
+
+    .azul, .caixas_redes {
+        width: 70%;
+        float: none;
+        margin-left: 10%;
+        margin-top: 10px;
+    }
+
+    #maps, #nossa_loja {
+        width: 80%;
+        margin-left: 5%;
+        float: none;
+        margin-top: 20px;
+    }
+
+    nav {
+        position: relative;
+        justify-content: center;
+        margin-right: 0;
+        padding: 10px;
+    }
+
+    nav a {
+        margin: 10px;
+    }
+}
+
